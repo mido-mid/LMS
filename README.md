@@ -1,5 +1,5 @@
 # LMS
-Learncode is the first online learning management system
+Learncode is an online learning management system
 
 # technologies used:
 - html
