@@ -25,5 +25,5 @@ Learncode is an online learning management system
 - create lms database on phpmyadmin
 - import sql file in your database
 - rename DB_DATABASE in .env file to lms
-- login as an owner mohamedosama12w32@gmail.com and password @Owner1234
+- login as an owner mm309on@gmail.com and password @Owner1234
 - That's it - allow people to register and start learning!
