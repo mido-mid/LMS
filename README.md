@@ -19,6 +19,8 @@ Learncode is an online learning management system
 
 ## How to use:
 - Clone the repository with __git clone__
+- make folder and rename it to laravel in the htdocs 
+- put the LMS project folder in the laravel folder
 - Run __composer install__
 - create lms database on phpmyadmin
 - import sql file in your database
