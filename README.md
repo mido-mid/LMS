@@ -20,6 +20,7 @@ Learncode is the first online learning management system
 ## How to use:
 - Clone the repository with __git clone__
 - Run __composer install__
+- create lms database on phpmyadmin
 - import sql file in your database
 - rename DB_DATABASE in .env file to lms
 - login as an owner mohamedosama12w32@gmail.com and password @Owner1234
