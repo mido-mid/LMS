@@ -2,20 +2,20 @@
 Learncode is an online learning management system
 
 # technologies used:
-- html
-- css
-- javascript
-- bootstrap
-- jquery
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+- jQuery
 - Laravel 5.8
-- jquery ajax
-- nucleo
-- fontawesome
-- Mysql 
+- jQuery Ajax
+- Nucleo
+- Font Awesome
+- MySQL 
 
 ## prerequisites:
-- xampp 
-- php
+- XAMPP 
+- PHP
 
 ## How to use:
 - Clone the repository with __git clone__
