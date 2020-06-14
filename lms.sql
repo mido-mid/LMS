@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 11, 2020 at 07:03 PM
+-- Generation Time: Jun 14, 2020 at 05:06 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -56,7 +56,7 @@ INSERT INTO `courses` (`id`, `title`, `description`, `slug`, `status`, `favourit
 (13, 'Dolor et qui nihil debitis.', 'Hic sed dicta tempore aut et alias omnis. Iusto necessitatibus id soluta pariatur vel et ut aperiam. Qui asperiores fuga voluptatem aspernatur mollitia magnam.', 'dolor-et-qui-nihil-debitis.', 1, 1, 'https://www.bruen.net/ducimus-exercitationem-molestias-amet-ut-impedit-fugit', 2, '2020-06-07 17:25:34', '2020-06-07 17:25:34'),
 (14, 'Quis quibusdam est voluptatem ut.', 'Animi neque iure natus dolore. Enim minima architecto officia nostrum. Numquam qui excepturi corporis laboriosam. Nam officiis voluptatem velit deleniti aut totam rerum.', 'quis-quibusdam-est-voluptatem-ut.', 1, 0, 'http://www.walter.com/repellat-mollitia-sed-unde-pariatur-facilis-magnam.html', 2, '2020-06-07 17:25:34', '2020-06-07 17:25:34'),
 (16, 'Aut necessitatibus porro quia.', 'Neque expedita eveniet tenetur at voluptatem vel placeat tenetur. Exercitationem sit laborum voluptatem sed non in.', 'aut-necessitatibus-porro-quia.', 0, 1, 'http://www.abbott.com/ipsum-dolore-suscipit-minus-qui-eos-reiciendis-rerum', 3, '2020-06-07 17:25:34', '2020-06-11 13:17:45'),
-(17, 'Nemo consequuntur omnis recusandae exercitationem nostrum facilis.', 'Sunt quibusdam laudantium error aperiam fuga. Voluptatem quod consequuntur labore tenetur. Accusantium cum repellendus ut mollitia eum facere.', 'nemo-consequuntur-omnis-recusandae-exercitationem-nostrum-facilis.', 1, 0, 'http://wyman.com/aut-voluptatem-cum-dolor-quaerat-iusto', 1, '2020-06-07 17:25:34', '2020-06-07 17:25:34'),
+(17, 'Nemo consequuntur omnis recusandae exercitationem nostrum facilis.', 'Sunt quibusdam laudantium error aperiam fuga. Voluptatem quod consequuntur labore tenetur. Accusantium cum repellendus ut mollitia eum facere.', 'nemo-consequuntur-omnis-recusandae-exercitationem-nostrum-facilis.', 1, 1, 'http://wyman.com/aut-voluptatem-cum-dolor-quaerat-iusto', 1, '2020-06-07 17:25:34', '2020-06-13 12:51:06'),
 (18, 'Perspiciatis rerum tempore placeat similique.', 'Ab illum ipsam incidunt voluptatem qui molestiae. Commodi earum cumque et officiis facilis cumque aliquid. Sunt sapiente voluptates expedita fugit a et voluptate voluptatem.', 'perspiciatis-rerum-tempore-placeat-similique.', 1, 1, 'http://hane.com/autem-veritatis-adipisci-rerum-optio', 9, '2020-06-07 17:25:34', '2020-06-07 17:25:34'),
 (22, 'Laborum quisquam magni quidem expedita.', 'Qui iure adipisci libero. Assumenda voluptas omnis pariatur tenetur minus quibusdam culpa voluptatum. Quidem cum maxime optio dolores vel officia. Voluptatum quos quibusdam id.', 'laborum-quisquam-magni-quidem-expedita.', 0, 1, 'http://www.hills.com/consequatur-ullam-aut-illo-quibusdam', 3, '2020-06-07 17:25:35', '2020-06-07 17:25:35'),
 (23, 'Voluptatem dolorem harum libero dicta.', 'Corporis porro et neque. Quia iure dignissimos et esse consectetur et. Ullam veniam exercitationem explicabo amet alias aut eos.', 'voluptatem-dolorem-harum-libero-dicta.', 0, 1, 'http://von.net/suscipit-consequatur-animi-iste-atque-unde-quia-ut', 2, '2020-06-07 17:25:35', '2020-06-07 17:25:35'),
@@ -76,8 +76,7 @@ INSERT INTO `courses` (`id`, `title`, `description`, `slug`, `status`, `favourit
 (40, 'Aut sint et ex quis quas sunt et.', 'Minima eaque quod tenetur harum quo et. Optio similique sint dolorem quia ab voluptates voluptatem. Sed fugit voluptatibus rerum. Distinctio quis et iure animi sunt est quam. Odio nobis sed aliquid.', 'aut-sint-et-ex-quis-quas-sunt-et.', 0, 0, 'http://streich.com/laborum-aut-hic-repellat-consequuntur', 3, '2020-06-07 17:25:36', '2020-06-07 17:25:36'),
 (42, 'Sint enim voluptate et est.', 'Ab iste nulla quia consequatur voluptatem unde. Consequatur similique nostrum atque ex doloremque dolorem. Perferendis et exercitationem vero ab facere tempora. Sit repellat rem alias quo facilis id.', 'sint-enim-voluptate-et-est.', 1, 1, 'http://www.turner.net/ea-quidem-sit-delectus-sed-amet-magni-vel', 3, '2020-06-07 17:25:36', '2020-06-07 17:25:36'),
 (45, 'Quam commodi deleniti nobis modi.', 'Vel quaerat dolores totam nobis sint odio. Recusandae et inventore sed quos vitae fugiat eos. Qui quaerat nulla officia dolorem quia reiciendis. Sit quos mollitia temporibus est et illo.', 'quam-commodi-deleniti-nobis-modi.', 0, 1, 'http://www.spencer.info/', 1, '2020-06-07 17:25:36', '2020-06-07 17:25:36'),
-(46, 'Beatae aut', 'Quia hic sit ipsum fugit occaecati et in. Rerum magnam ipsa quia quo eius. Minima nulla enim est omnis eos.', 'beatae-aut', 0, 1, 'http://kirlin.biz/', 1, '2020-06-07 17:25:36', '2020-06-11 11:04:12'),
-(51, 'laravel course for beginners', 'dgfdgfdgfdgfdgfg', 'laravel-course-for-beginners', 0, 1, 'http://localhost/laravel/LMS/public/admin/courses/create', 3, '2020-06-11 11:25:57', '2020-06-11 13:22:40');
+(46, 'Beatae aut', 'Quia hic sit ipsum fugit occaecati et in. Rerum magnam ipsa quia quo eius. Minima nulla enim est omnis eos.', 'beatae-aut', 0, 1, 'http://kirlin.biz/', 1, '2020-06-07 17:25:36', '2020-06-11 11:04:12');
 
 -- --------------------------------------------------------
 
@@ -124,7 +123,6 @@ INSERT INTO `course_user` (`user_id`, `course_id`) VALUES
 (11, 24),
 (11, 39),
 (11, 10),
-(11, 51),
 (11, 40),
 (15, 29),
 (15, 17),
@@ -241,8 +239,7 @@ INSERT INTO `photoable` (`id`, `filename`, `photoable_id`, `photoable_type`, `cr
 (49, '10.jpg', 5, 'App\\User', '2020-06-07 17:25:52', '2020-06-07 17:25:52'),
 (50, '3.jpg', 49, 'App\\Course', '2020-06-07 17:25:52', '2020-06-07 17:25:52'),
 (54, '1591706155_96825266_1504349436411104_1068335791614197760_n_.jpg', 1, 'App\\Course', '2020-06-09 10:35:55', '2020-06-09 10:35:55'),
-(57, '1591881957_bg-01_.jpg', 51, 'App\\Course', '2020-06-11 11:25:57', '2020-06-11 11:25:57'),
-(60, '1591887043_Mohamed Os_.jpg', 11, 'App\\User', '2020-06-11 12:50:43', '2020-06-11 12:50:43');
+(62, '1592052306_Mohamed Osama_.jpg', 11, 'App\\User', '2020-06-13 10:45:06', '2020-06-13 10:45:06');
 
 -- --------------------------------------------------------
 
@@ -354,8 +351,7 @@ INSERT INTO `quizzes` (`id`, `name`, `course_id`, `created_at`, `updated_at`) VA
 (38, 'fugiat', 14, '2020-06-07 17:25:44', '2020-06-07 17:25:44'),
 (39, 'ea', 31, '2020-06-07 17:25:44', '2020-06-07 17:25:44'),
 (41, 'voluptatum', 23, '2020-06-07 17:25:44', '2020-06-07 17:25:44'),
-(46, 'totam', 42, '2020-06-07 17:25:44', '2020-06-07 17:25:44'),
-(56, 'fgnbnm,k,,j', 51, '2020-06-11 11:35:37', '2020-06-11 11:35:37');
+(46, 'totam', 42, '2020-06-07 17:25:44', '2020-06-07 17:25:44');
 
 -- --------------------------------------------------------
 
@@ -417,7 +413,8 @@ INSERT INTO `tracks` (`id`, `name`, `created_at`, `updated_at`) VALUES
 (5, 'sunt', '2020-06-07 17:25:32', '2020-06-07 17:25:32'),
 (6, 'aut', '2020-06-07 17:25:32', '2020-06-07 17:25:32'),
 (7, 'ratione', '2020-06-07 17:25:32', '2020-06-07 17:25:32'),
-(9, 'aspernatur', '2020-06-07 17:25:32', '2020-06-07 17:25:32');
+(9, 'aspernat', '2020-06-07 17:25:32', '2020-06-12 04:50:09'),
+(12, 'Web Development', '2020-06-13 10:46:28', '2020-06-13 10:46:28');
 
 -- --------------------------------------------------------
 
@@ -459,7 +456,8 @@ INSERT INTO `track_user` (`user_id`, `track_id`) VALUES
 (11, 1),
 (11, 5),
 (15, 1),
-(15, 6);
+(15, 6),
+(11, 12);
 
 -- --------------------------------------------------------
 
@@ -493,11 +491,11 @@ INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `ad
 (6, 'Darwin Bergstrom Jr.', 'hettinger.kirk@example.org', '2020-06-07 17:25:31', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 1, 190, 'rZgqb0dDIg', '2020-06-07 17:25:31', '2020-06-07 17:25:31'),
 (7, 'Maximo Schuster', 'rbailey@example.net', '2020-06-07 17:25:31', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 1, 150, 'adSUmKipe1', '2020-06-07 17:25:31', '2020-06-07 17:25:31'),
 (8, 'Joshuah Denesik', 'molly.dickens@example.com', '2020-06-07 17:25:31', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 1, 155, 'YbZx0CmYL1', '2020-06-07 17:25:31', '2020-06-07 17:25:31'),
-(9, 'Dr. Cameron Keeling MD', 'keagan.hartmann@example.net', '2020-06-07 17:25:31', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 100, 'U4mM0LPPlX', '2020-06-07 17:25:31', '2020-06-07 17:25:31'),
+(9, 'Dr. Cameron Keeling MD', 'keagan.hartmann@example.net', '2020-06-07 17:25:31', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 100, '0v1EL9B7S2CcfS1hUWPYUCBtPeKyYy2JTK5mHzKPkk0ZFnZhZJhO1PMbTX71', '2020-06-07 17:25:31', '2020-06-07 17:25:31'),
 (10, 'Melissa Blanda I', 'rhane@example.net', '2020-06-07 17:25:31', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 200, '0TLFCXU8KD', '2020-06-07 17:25:31', '2020-06-07 17:25:31'),
-(11, 'Mohamed Osama', 'mohamedosama12w32@gmail.com', NULL, '$2y$10$PKWHlbkGYYZcuajft78JEuL0OdSh4yJmx6sEiiEJN/jP/O8LJADEu', 2, 96, NULL, '2020-06-07 17:30:24', '2020-06-11 14:32:13'),
-(12, 'mido dfd', 'midofdgfdg@gmail.com', NULL, '$2y$10$9Km6sov4NWYsyiE43f00HeERBPf2b3RxvlAyIrzJzGjGf1u6QyOGu', 0, 20, NULL, '2020-06-11 01:28:19', '2020-06-11 11:37:03'),
-(15, 'Mohamed Osama Mostafa', 'mm309on@gmail.com', NULL, '$2y$10$AFmCrmNVDkckLyDOWO6mOeDHRf6CUwWuD.1dRnU2SsYoB.E4.LYgK', 2, 0, NULL, '2020-06-11 14:33:39', '2020-06-11 14:33:39');
+(11, 'Mohamed Osama', 'mohamedosama12w32@gmail.com', NULL, '$2y$10$PKWHlbkGYYZcuajft78JEuL0OdSh4yJmx6sEiiEJN/jP/O8LJADEu', 1, 176, NULL, '2020-06-07 17:30:24', '2020-06-13 13:59:48'),
+(12, 'mido dfd', 'midofdgfdg@gmail.com', NULL, '$2y$10$6lQMZiLaRRmjs2Cc6Vtj.e9niC7OMIv5rlrj9pEBZmCgaL4JQhaWO', 0, 20, NULL, '2020-06-11 01:28:19', '2020-06-12 04:48:44'),
+(15, 'Mohamed Osama', 'mm309on@gmail.com', NULL, '$2y$10$AFmCrmNVDkckLyDOWO6mOeDHRf6CUwWuD.1dRnU2SsYoB.E4.LYgK', 2, 0, NULL, '2020-06-11 14:33:39', '2020-06-13 12:21:10');
 
 -- --------------------------------------------------------
 
@@ -641,7 +639,7 @@ ALTER TABLE `videos`
 -- AUTO_INCREMENT for table `courses`
 --
 ALTER TABLE `courses`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -653,25 +651,25 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `photoable`
 --
 ALTER TABLE `photoable`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
 
 --
 -- AUTO_INCREMENT for table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT for table `quizzes`
 --
 ALTER TABLE `quizzes`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
 -- AUTO_INCREMENT for table `tracks`
 --
 ALTER TABLE `tracks`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `users`
@@ -683,7 +681,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `videos`
 --
 ALTER TABLE `videos`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 
 --
 -- Constraints for dumped tables

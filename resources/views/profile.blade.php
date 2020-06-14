@@ -72,7 +72,7 @@
 
                         <p id="error" role="alert" class="alert alert-danger" style="font-size:16px;font-family:'lato';padding: 8px 15px;display:none">
                     
-                            please enter your name , email and password correctly
+                            please enter your name , email correctly and confirm your password if exists
                     
                             </p>
 

@@ -109,7 +109,7 @@
                                 <div class="col-sm-5">
                                     <p id="error" role="alert" class="alert alert-danger" style="font-size:16px;font-family:'lato';padding: 8px 15px;display:none;margin-top:10px">
                     
-                                        please enter your name , email and password correctly
+                                        please enter your name , email , subject and message correctly
                             
                                     </p>
                                     <p id="message" role="alert" class="alert alert-success" style="font-size:16px;font-family:'lato';padding: 8px 15px;display:none;margin-top:10px"></p>

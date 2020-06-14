@@ -52,7 +52,9 @@
                                         <a href="{{ route('courses.edit', $course) }}" class="btn btn-primary btn-sm">Edit</a>
                                         <a href="{{ route('courses.show', $course) }}" class="btn btn-info btn-sm">show</a>
 
-                                        <input class="btn btn-danger btn-sm" type="submit" value="Delete" name="deletecourse">
+                                        <button type="button" class="btn btn-danger btn-sm" onclick="confirm('{{ __("Are you sure you want to delete this course?") }}') ? this.parentElement.submit() : ''">
+                                            {{ __('Delete') }}
+                                        </button>
                                     </form>
                                 
                                 </div>
