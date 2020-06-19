@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 19, 2020 at 05:46 PM
+-- Generation Time: Jun 19, 2020 at 06:24 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -145,7 +145,8 @@ INSERT INTO `course_user` (`user_id`, `course_id`) VALUES
 (1, 30),
 (1, 1),
 (1, 34),
-(11, 29);
+(11, 29),
+(11, 23);
 
 -- --------------------------------------------------------
 
@@ -229,7 +230,7 @@ INSERT INTO `photoable` (`id`, `filename`, `photoable_id`, `photoable_type`, `cr
 (19, '2.jpg', 33, 'App\\Course', '2020-06-19 09:14:54', '2020-06-19 09:14:54'),
 (20, '5.jpg', 37, 'App\\Course', '2020-06-19 09:14:54', '2020-06-19 09:14:54'),
 (21, '3.jpg', 9, 'App\\User', '2020-06-19 09:14:54', '2020-06-19 09:14:54'),
-(22, '1592575365_96825266_1504349436411104_1068335791614197760_n_.jpg', 50, 'App\\Course', '2020-06-19 09:14:54', '2020-06-19 12:02:45'),
+(22, '1592582489_image2_.jpg', 50, 'App\\Course', '2020-06-19 09:14:54', '2020-06-19 14:01:29'),
 (23, '2.jpg', 10, 'App\\User', '2020-06-19 09:14:54', '2020-06-19 09:14:54'),
 (24, '2.jpg', 5, 'App\\User', '2020-06-19 09:14:54', '2020-06-19 09:14:54'),
 (25, '7.jpg', 3, 'App\\User', '2020-06-19 09:14:54', '2020-06-19 09:14:54'),
@@ -258,7 +259,7 @@ INSERT INTO `photoable` (`id`, `filename`, `photoable_id`, `photoable_type`, `cr
 (48, '10.jpg', 9, 'App\\User', '2020-06-19 09:14:55', '2020-06-19 09:14:55'),
 (49, '3.jpg', 9, 'App\\User', '2020-06-19 09:14:56', '2020-06-19 09:14:56'),
 (50, '8.jpg', 10, 'App\\Course', '2020-06-19 09:14:56', '2020-06-19 09:14:56'),
-(52, '1592575388_Mohamed Osama_.webp', 11, 'App\\User', '2020-06-19 12:03:08', '2020-06-19 12:03:08');
+(55, '1592583289_Mohamed Osama_.webp', 11, 'App\\User', '2020-06-19 14:14:50', '2020-06-19 14:14:50');
 
 -- --------------------------------------------------------
 
@@ -404,7 +405,8 @@ INSERT INTO `quizzes` (`id`, `name`, `course_id`, `created_at`, `updated_at`) VA
 (47, 'dolorem', 30, '2020-06-19 09:14:46', '2020-06-19 09:14:46'),
 (48, 'consequatur', 40, '2020-06-19 09:14:46', '2020-06-19 09:14:46'),
 (49, 'eum', 27, '2020-06-19 09:14:46', '2020-06-19 09:14:46'),
-(50, 'autfhfdg', 21, '2020-06-19 09:14:46', '2020-06-19 09:42:54');
+(50, 'autfhfdg', 21, '2020-06-19 09:14:46', '2020-06-19 09:42:54'),
+(51, 'dgbjdfjgdf', 50, '2020-06-19 14:00:15', '2020-06-19 14:00:15');
 
 -- --------------------------------------------------------
 
@@ -544,7 +546,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `admin`, `score`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Mrs. Destini Kassulke', 'maida55@example.net', '2020-06-19 09:14:28', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 1, 190, 'QtWVbo1G8esafqMbVuOWFtL8Rq50s9127oSqj4jiq0ORsqbApCMICCBJiyb0', '2020-06-19 09:14:28', '2020-06-19 09:18:35'),
+(1, 'Mrs. Destini Kassulke', 'maida55@example.net', '2020-06-19 09:14:28', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 1, 190, 'izvrtLvZiJqG2TGpy6ABV2ZhwejcuzvweQni7k5NcVFjb2q6e7Zc7sTTSw7S', '2020-06-19 09:14:28', '2020-06-19 09:18:35'),
 (2, 'Nona Wehner', 'olen.feeney@example.org', '2020-06-19 09:14:28', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 200, '7KHjjrBXWqhB599beaSpmp1y3sVOzvZoDdvlsInsKTqpeyKWGxe5f3Shlxao', '2020-06-19 09:14:29', '2020-06-19 09:14:29'),
 (3, 'Mr. Leonardo Kuhn', 'dewitt.morar@example.com', '2020-06-19 09:14:28', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 100, 'awy2Ou6RWkKvtFS4g0ZBi5RvZ18ATsAornKqhHZZ7fglFloDzHRcXVNI7EII', '2020-06-19 09:14:29', '2020-06-19 09:14:29'),
 (4, 'Bria Gerhold', 'nleuschke@example.org', '2020-06-19 09:14:28', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 1, 100, 'CpAVx7M0Rj', '2020-06-19 09:14:29', '2020-06-19 09:14:29'),
@@ -554,7 +556,8 @@ INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `ad
 (8, 'Kaci Spencer', 'santos.hodkiewicz@example.org', '2020-06-19 09:14:28', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 190, '2bybFfxaCA', '2020-06-19 09:14:29', '2020-06-19 09:14:29'),
 (9, 'Eladio Rolfson', 'geovanny.orn@example.com', '2020-06-19 09:14:28', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 200, 'k6748Jyvgd', '2020-06-19 09:14:29', '2020-06-19 09:14:29'),
 (10, 'Kylee Grimes', 'bechtelar.lambert@example.net', '2020-06-19 09:14:28', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 150, 'AbOsgOQo6W', '2020-06-19 09:14:29', '2020-06-19 09:14:29'),
-(11, 'Mohamed Osama', 'mm309on@gmail.com', NULL, '$2y$10$HbiRrbx4gSdXJ5ssOag2dOh26I3VINfHqP0MSk03.s6hXjzHlEKwu', 2, 0, NULL, '2020-06-19 09:23:11', '2020-06-19 12:03:04');
+(11, 'Mohamed Osama', 'mm309on@gmail.com', NULL, '$2y$10$HbiRrbx4gSdXJ5ssOag2dOh26I3VINfHqP0MSk03.s6hXjzHlEKwu', 2, 0, NULL, '2020-06-19 09:23:11', '2020-06-19 13:59:08'),
+(12, 'mohamedgdfg', 'fhc@gmail.com', NULL, '$2y$10$38X.g2iCFEEGDIahS6HR0urXL7wDbJ1SAVcuGuz0GRdLQagP6Kg2O', 1, 0, NULL, '2020-06-19 14:02:16', '2020-06-19 14:02:16');
 
 -- --------------------------------------------------------
 
@@ -625,7 +628,7 @@ INSERT INTO `videos` (`id`, `title`, `link`, `course_id`, `created_at`, `updated
 (47, 'Hic architecto nihil quo fugiat eius.', 'http://bauch.com/aut-est-nobis-sunt-quam.html', 15, '2020-06-19 09:14:42', '2020-06-19 09:14:42'),
 (48, 'Tenetur ratione rerum quia.', 'http://www.kunze.com/', 22, '2020-06-19 09:14:42', '2020-06-19 09:14:42'),
 (49, 'Unde consequatur quae ut dolor aut laudantium quibusdam.', 'http://veum.com/', 4, '2020-06-19 09:14:42', '2020-06-19 09:14:42'),
-(50, 'Tempore qui consequatur possimus.', 'http://www.auer.info/accusamus-aut-quisquam-soluta-dolor-fugit.html', 47, '2020-06-19 09:14:42', '2020-06-19 09:14:42');
+(50, 'Tempore qui consequatur possimus.', 'http://www.auer.info/accusamus-aut-quisquam-soluta-dolor-fugit.html', 47, '2020-06-19 09:14:42', '2020-06-19 14:09:15');
 
 --
 -- Indexes for dumped tables
@@ -731,7 +734,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `photoable`
 --
 ALTER TABLE `photoable`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT for table `questions`
@@ -743,7 +746,7 @@ ALTER TABLE `questions`
 -- AUTO_INCREMENT for table `quizzes`
 --
 ALTER TABLE `quizzes`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 
 --
 -- AUTO_INCREMENT for table `tracks`
@@ -755,7 +758,7 @@ ALTER TABLE `tracks`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `videos`
