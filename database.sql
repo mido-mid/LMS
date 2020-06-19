@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 19, 2020 at 06:24 PM
+-- Generation Time: Jun 19, 2020 at 07:37 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -93,9 +93,7 @@ INSERT INTO `courses` (`id`, `title`, `description`, `slug`, `status`, `favourit
 (45, 'Quia est eaque minus.', 'Architecto incidunt harum autem repellat sed odio exercitationem. Aut rerum esse voluptatum est. Tempora voluptatem magni sequi cum. Velit amet ut molestias quibusdam vel voluptatem.', 'quia-est-eaque-minus.', 1, 1, 'http://www.dubuque.biz/fugit-pariatur-doloremque-facilis-quibusdam-odit-aperiam.html', 5, '2020-06-19 09:14:35', '2020-06-19 09:14:35'),
 (46, 'Beatae necessitatibus veniam et qui animi laboriosam qui similique.', 'Aut numquam quis vero reiciendis. Id qui fugiat voluptatem ipsam. Et veniam reiciendis blanditiis culpa quasi et.', 'beatae-necessitatibus-veniam-et-qui-animi-laboriosam-qui-similique.', 0, 1, 'http://purdy.com/nostrum-dolorum-inventore-beatae', 5, '2020-06-19 09:14:35', '2020-06-19 09:14:35'),
 (47, 'Est eaque nam et aut ut.', 'Quaerat dolores corporis nulla nesciunt. Quisquam aut vel provident et et eaque. Nisi laborum consectetur corrupti et doloremque.', 'est-eaque-nam-et-aut-ut.', 1, 0, 'http://www.hilpert.com/molestiae-incidunt-qui-nihil-laudantium-ut-in', 1, '2020-06-19 09:14:35', '2020-06-19 09:14:35'),
-(48, 'Rerum voluptas tempore molestiae et neque.', 'Nostrum animi veritatis qui non. Eum deserunt officia molestiae enim quod. Deserunt ut rerum est voluptatem magni ut. Aut aut rerum et qui quasi.', 'rerum-voluptas-tempore-molestiae-et-neque.', 0, 1, 'http://www.lockman.biz/repellendus-odit-ab-aliquam-et-modi', 6, '2020-06-19 09:14:35', '2020-06-19 09:14:35'),
-(49, 'Est quidem repudiandae alias omnis nihil fuga quo et.', 'In numquam sint dolor dignissimos. Ex facere consequatur omnis ipsum a ipsa cumque. Omnis quis quia dolore vel consequuntur quo ipsam magni. Qui culpa est vitae sed culpa et aperiam qui.', 'est-quidem-repudiandae-alias-omnis-nihil-fuga-quo-et.', 1, 1, 'http://www.padberg.com/sed-enim-illo-odio-eos-sequi-accusamus-perspiciatis-officia', 6, '2020-06-19 09:14:35', '2020-06-19 09:14:35'),
-(50, 'Odio sequi eaque veniam ullam eum nulla.', 'Dolores quaerat labore non numquam qui. Quo in qui autem voluptatibus itaque. Ut vel consequuntur aliquam minus minus molestiae quia.', 'odio-sequi-eaque-veniam-ullam-eum-nulla.', 0, 1, 'http://pacocha.com/', 6, '2020-06-19 09:14:35', '2020-06-19 09:14:35');
+(48, 'Rerum voluptas tempore molestiae et neque.', 'Nostrum animi veritatis qui non. Eum deserunt officia molestiae enim quod. Deserunt ut rerum est voluptatem magni ut. Aut aut rerum et qui quasi.', 'rerum-voluptas-tempore-molestiae-et-neque.', 0, 1, 'http://www.lockman.biz/repellendus-odit-ab-aliquam-et-modi', 6, '2020-06-19 09:14:35', '2020-06-19 09:14:35');
 
 -- --------------------------------------------------------
 
@@ -405,8 +403,7 @@ INSERT INTO `quizzes` (`id`, `name`, `course_id`, `created_at`, `updated_at`) VA
 (47, 'dolorem', 30, '2020-06-19 09:14:46', '2020-06-19 09:14:46'),
 (48, 'consequatur', 40, '2020-06-19 09:14:46', '2020-06-19 09:14:46'),
 (49, 'eum', 27, '2020-06-19 09:14:46', '2020-06-19 09:14:46'),
-(50, 'autfhfdg', 21, '2020-06-19 09:14:46', '2020-06-19 09:42:54'),
-(51, 'dgbjdfjgdf', 50, '2020-06-19 14:00:15', '2020-06-19 14:00:15');
+(50, 'autfhfdg', 21, '2020-06-19 09:14:46', '2020-06-19 09:42:54');
 
 -- --------------------------------------------------------
 
@@ -596,7 +593,6 @@ INSERT INTO `videos` (`id`, `title`, `link`, `course_id`, `created_at`, `updated
 (15, 'Omnis officia quidem itaque libero.', 'http://www.dibbert.com/eum-voluptatum-deleniti-illo-in-saepe-dolorem-quia', 24, '2020-06-19 09:14:39', '2020-06-19 09:14:39'),
 (16, 'Enim maxime ratione unde ea.', 'http://www.stark.com/', 2, '2020-06-19 09:14:39', '2020-06-19 09:14:39'),
 (17, 'Esse aut laborum fuga ut exercitationem.', 'http://www.rau.info/rerum-voluptates-iste-non-sed-sint-quisquam-id', 4, '2020-06-19 09:14:39', '2020-06-19 09:14:39'),
-(18, 'Cumque voluptatem aut dolor velit.', 'https://www.harvey.com/et-nihil-recusandae-voluptatibus-non', 50, '2020-06-19 09:14:40', '2020-06-19 09:14:40'),
 (19, 'Eum porro dolor et.', 'http://www.kuhn.com/possimus-atque-dolorem-magni-sed-dolores-aperiam-deleniti.html', 28, '2020-06-19 09:14:40', '2020-06-19 09:14:40'),
 (20, 'Aliquam minus sed maxime est omnis maiores.', 'http://www.mccullough.com/omnis-illum-atque-velit-modi-maxime-soluta', 39, '2020-06-19 09:14:40', '2020-06-19 09:14:40'),
 (21, 'Adipisci sint voluptatem odio aut.', 'https://www.yundt.com/est-repellendus-esse-sed-voluptate-voluptatum-quo', 33, '2020-06-19 09:14:40', '2020-06-19 09:14:40'),
@@ -620,7 +616,6 @@ INSERT INTO `videos` (`id`, `title`, `link`, `course_id`, `created_at`, `updated
 (39, 'Eligendi dolor itaque aut fuga at eos.', 'http://www.hills.net/', 45, '2020-06-19 09:14:41', '2020-06-19 09:14:41'),
 (40, 'Ut et commodi nemo autem tenetur.', 'http://hickle.com/ut-dicta-eveniet-et-consequatur', 11, '2020-06-19 09:14:41', '2020-06-19 09:14:41'),
 (41, 'Hic nesciunt quam consectetur beatae omnis rerum.', 'http://www.dare.org/temporibus-maiores-quia-distinctio-ut-porro-ut', 48, '2020-06-19 09:14:41', '2020-06-19 09:14:41'),
-(42, 'Et est assumenda voluptatem eveniet rerum.', 'http://conroy.info/nostrum-expedita-animi-consequatur-unde-sed-quos.html', 50, '2020-06-19 09:14:41', '2020-06-19 09:14:41'),
 (43, 'Sint id ut blanditiis ut eos non.', 'http://cronin.net/illo-quaerat-voluptate-aut-aut-nostrum-consequatur-velit.html', 11, '2020-06-19 09:14:41', '2020-06-19 09:14:41'),
 (44, 'Impedit in consequuntur voluptate dolores tempore eos cumque.', 'https://www.witting.com/optio-sequi-quia-ipsam-quam-voluptas-aperiam', 40, '2020-06-19 09:14:41', '2020-06-19 09:14:41'),
 (45, 'Mollitia corporis amet omnis magnam atque.', 'https://www.carroll.info/eligendi-quia-consequatur-totam-aspernatur', 10, '2020-06-19 09:14:42', '2020-06-19 09:14:42'),
@@ -734,7 +729,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `photoable`
 --
 ALTER TABLE `photoable`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 
 --
 -- AUTO_INCREMENT for table `questions`
