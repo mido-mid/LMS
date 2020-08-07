@@ -31,12 +31,12 @@
                                 <p>{{ $course->description }}</p>
                                 <h5>
                                     Track:
-                                    <a href="{{ $url }}/tracks/{{$course->track->name}}">{{ $course->track->name }}</a>
+                                    <a href="{{ route('track',$course->track->name) }}">{{ $course->track->name }}</a>
                                     <span style="float:right">
                                     <span class="status {{ $course->status == 0 ? 'text-success' : 'text-danger'}} status">{{ $course->status == '0'? 'FREE' : 'PAID' }}</span>
                                         <span>{{ count($course->users) }}</span>
                                         <span>users enrolled</span>
-                                    </span>       
+                                    </span>
                                 </h5>
                         </div>
 
@@ -44,7 +44,7 @@
                                 @if($course->photo)
                                     <img src="{{ asset('images') }}/{{$course->photo->filename}}" alt="Course Photo">
                                 @else
-                                    <img  src="{{ asset('images') }}/default.jpg" alt="Course Photo">
+                                    <img src="{{ asset('images') }}/default.jpg" alt="Course Photo">
                                 @endif
                         </div>
                     </div>
@@ -63,7 +63,7 @@
 
                 <div class="enroll-form">
 
-                    <form action="{{$url}}/courses/{{$course->slug}}" method="POST">
+                    <form action="{{route('courseenroll',$course->slug)}}" method="POST">
 
                     @csrf
 
@@ -111,7 +111,7 @@
                     </div>
                 </div>
 
-        
+
 
             <div class="quizzes">
 
@@ -129,11 +129,11 @@
 
                                     @if(auth()->user()->quizzes()->where('id',$quiz->id)->first())
                                     <div class="quiz disabled">
-                                        <i style="margin-right: 5px;color: whitesmoke;" class="fas fa-check"></i><a target="_blank" href="{{$url}}/courses/{{$course->slug}}/quizzes/{{$quiz->name}}">{{ $quiz->name }} quiz</a>
+                                        <i style="margin-right: 5px;color: whitesmoke;" class="fas fa-check"></i><a target="_blank" href="{{ route('quiz',['slug' => $quiz->course->slug , 'name' => $quiz->name ]) }}">{{ $quiz->name }} quiz</a>
                                     </div>
                                     @else
                                     <div class="quiz">
-                                        <a target="_blank" href="{{$url}}/courses/{{$course->slug}}/quizzes/{{$quiz->name}}">{{ $quiz->name }} quiz</a>
+                                        <a target="_blank" href="{{ route('quiz',['slug' => $quiz->course->slug , 'name' => $quiz->name ]) }}">{{ $quiz->name }} quiz</a>
                                     </div>
                                     @endif
                             @endforeach
@@ -142,7 +142,7 @@
 
                             @foreach($course->quizzes as $quiz)
                                 <div class="quiz disabled">
-                                    <a id="#anchor" target="_blank" href="{{$url}}/courses/{{$course->slug}}/quizzes/{{$quiz->name}}">{{ $quiz->name }} quiz</a> 
+                                    <a id="#anchor" target="_blank" href="{{ route('quiz',['slug' => $quiz->course->slug , 'name' => $quiz->name ]) }}">{{ $quiz->name }} quiz</a>
                                 </div>
                             @endforeach
 

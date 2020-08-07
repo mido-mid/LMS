@@ -21,11 +21,11 @@
                         @endif
                     </div>
 
-                <form action="{{$url}}/courses/{{ $quiz->course->slug }}/quizzes/{{ $quiz->name }}" method="POST" autocomplete="off">
-                       
+                <form action="{{ route('quizpost',['slug' => $quiz->course->slug , 'name' => $quiz->name ]) }}" method="POST" autocomplete="off">
+
                     @csrf
-                
-                
+
+
                         @foreach($quiz->questions as $question)
                             <div class="form-group">
                                 <label for="answer">{{ $question->title }} (<span>{{ $question->score }} Points </span>)</label>
@@ -45,12 +45,12 @@
                             </div><hr>
                         @endforeach
 
-                        
+
 
                             <input type="submit" class="btn btn-primary" name="submit" >
 
-                      
-        
+
+
 
                 </form>
             </div>

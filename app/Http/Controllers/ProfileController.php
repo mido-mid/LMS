@@ -16,10 +16,9 @@ class ProfileController extends Controller
     public function index()
     {
 
-        $url = '/laravel/LMS/public';
         $user = auth()->user();
         $tracks = $user->tracks;
-        return view('profile',compact('user','tracks','url'));
+        return view('profile',compact('user','tracks'));
     }
 
     public function update(Request $request)
@@ -65,7 +64,7 @@ class ProfileController extends Controller
 
         else
         {
-            
+
             $rules = [
 
                 'name' =>'required|string|min:5|max:30',
@@ -107,7 +106,7 @@ class ProfileController extends Controller
 
         }
 
-        
+
     }
 
 }

@@ -3,23 +3,23 @@
 
 // User Routes
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('homeuser');
 
-Route::get('/courses/{slug}', 'CourseController@index');
+Route::get('/courses/{slug}', 'CourseController@index')->name('course');
 
-Route::post('/courses/{slug}', 'CourseController@enroll');
+Route::post('/courses/{slug}', 'CourseController@enroll')->name('courseenroll');
 
-Route::get('/courses/{slug}/quizzes/{name}', 'QuizController@index');
+Route::get('/courses/{slug}/quizzes/{name}', 'QuizController@index')->name('quiz');
 
-Route::post('/courses/{slug}/quizzes/{name}', 'QuizController@submit');
+Route::post('/courses/{slug}/quizzes/{name}', 'QuizController@submit')->name('quizpost');
 
-Route::get('/search', 'SearchController@index')->name('search.index');
+Route::get('/search', 'SearchController@index')->name('search');
 
-Route::get('/tracks/{name}', 'TrackController@index');
+Route::get('/tracks/{name}', 'TrackController@index')->name('track');
 
 Route::get('/mycourses', 'MyCoursesController@index')->name('mycourses');
 
@@ -49,7 +49,7 @@ Route::get('/logout',function(){
 	}
 })->name('logout');
 
-// Admin Routes 
+// Admin Routes
 
 Route::group(['middleware' => ['auth', 'admin'] ], function () {
 

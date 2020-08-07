@@ -29,21 +29,21 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
 
         <div class="container-fluid user-navbar">
-             
+
             <a class="navbar-brand" href="#"><span class="logo">LC</span> Learncode</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse links" id="navbarSupportedContent">
-                <form class="search-form form-inline mr-auto" action="{{$url}}/search" method="GET">
+                <form class="search-form form-inline mr-auto" action="{{route('search')}}" method="GET">
                     <input class="form-control" type="text" name="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-mdb-color btn-rounded btn-sm my-0 ml-sm-2" type="submit"><i style="margin-right:5px" class="fas fa-search"></i>Search</button>
                 </form>
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{$url}}">Home</a>
+                        <a class="nav-link" href="{{ route('homeuser') }}">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('allcourses') }}">All courses</a>
@@ -91,7 +91,7 @@
                         @endauth
                     </li>
                 </ul>
-            
+
             </div>
         </div>
     </nav>
@@ -100,8 +100,8 @@
 
 
     @include('includes.footer')
-    
-        <script src="{{ asset('argon') }}/vendor/jquery/dist/jquery.min.js"></script>  
+
+        <script src="{{ asset('argon') }}/vendor/jquery/dist/jquery.min.js"></script>
         <script src="{{ asset('js') }}/script.js"></script>
         <script src="{{ asset('js') }}/jquery-3.5.1.min.js">
         //<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

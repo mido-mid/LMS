@@ -23,7 +23,7 @@
                     <div class="card-body px-lg-5 py-lg-5">
                         <div class="text-center text-muted mb-4">
                             <small>
-                                <a href="{{ route('register') }}">{{ __('Create new account') }}</a> 
+                                <a href="{{ route('register') }}">{{ __('Create new account') }}</a>
                             </small>
                         </div>
                         <form role="form" method="POST" action="{{ route('login') }}">
@@ -34,13 +34,13 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                                     </div>
-                                    <input class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ __('Email') }}" type="email" name="email" value="{{ old('email') }}" value="admin@argon.com" required autofocus>
+                                    <input class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ __('Email') }}" type="email" name="email" value="{{ old('email') }}" required autofocus>
                                 </div>
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback" style="display: block;" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                      <strong>{{ $message }}</strong>
                                     </span>
-                                @endif
+                                @enderror
                             </div>
                             <div class="form-group{{ $errors->has('password') ? ' has-danger' : '' }}">
                                 <div class="input-group input-group-alternative">
@@ -49,11 +49,11 @@
                                     </div>
                                     <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="{{ __('Password') }}" type="password" value="secret" required>
                                 </div>
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback" style="display: block;" role="alert">
-                                        <strong>{{ $errors->first('password') }}</strong>
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                      <strong>{{ $message }}</strong>
                                     </span>
-                                @endif
+                                @enderror
                             </div>
                             <div class="custom-control custom-control-alternative custom-checkbox">
                                 <input class="custom-control-input" name="remember" id="customCheckLogin" type="checkbox" {{ old('remember') ? 'checked' : '' }}>

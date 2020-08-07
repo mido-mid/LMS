@@ -27,21 +27,21 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
 
             <div class="container-fluid">
-                
+
                 <a class="navbar-brand" href="#"><span class="logo">LC</span> Learncode</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse links" id="navbarSupportedContent">
-                    <form class="search-form form-inline mr-auto" action="{{$url}}/search" method="GET">
+                    <form class="search-form form-inline mr-auto" action="{{route('search')}}" method="GET">
                         <input class="form-control" type="text" name="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-mdb-color btn-rounded btn-sm my-0 ml-sm-2" type="submit">Search</button>
                     </form>
 
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{$url}}">Home</a>
+                            <a class="nav-link" href="{{route('homeuser')}}">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('allcourses') }}">All courses</a>
@@ -89,7 +89,7 @@
                             @endauth
                         </li>
                     </ul>
-                
+
                 </div>
             </div>
         </nav>
@@ -108,12 +108,12 @@
 
                                 <div class="col-sm-5">
                                     <p id="error" role="alert" class="alert alert-danger" style="font-size:16px;font-family:'lato';padding: 8px 15px;display:none;margin-top:10px">
-                                        
+
                                         please enter your name , email , subject and message correctly
                                     </p>
                                     <p id="message" role="alert" class="alert alert-success" style="font-size:16px;font-family:'lato';padding: 8px 15px;display:none;margin-top:10px"></p>
                                     <div class="contact-info">
-                                                <form method="POST" id="contact-form" action="{{$url}}/contact" autocomplete="off">
+                                                <form method="POST" id="contact-form" action="{{route('contactpost')}}" autocomplete="off">
 
                                                     @csrf
                                                     <h2 class="heading-small">{{ __('Contact information') }}</h2>
@@ -143,7 +143,7 @@
                                                     <div class="form-group{{ $errors->has('subject') ? ' has-danger' : '' }}">
                                                         <label class="form-control-label" for="input-subject">{{ __('Subject') }}</label>
                                                         <input type="text" name="subject" id="input-subject" class="contact-field form-control form-control-alternative{{ $errors->has('subject') ? ' is-invalid' : '' }}" placeholder="{{ __('subject') }}" value="">
-                                                        
+
                                                         @if ($errors->has('subject'))
                                                             <span class="invalid-feedback" role="alert">
                                                                 <strong>{{ $errors->first('subject') }}</strong>
@@ -153,14 +153,14 @@
                                                     <div class="form-group">
                                                         <label class="form-control-label" for="input-message">{{ __('Message') }}</label>
                                                         <textarea name="message" id="input-message" class="contact-field form-control form-control-alternative" placeholder="{{ __('message') }}" value="" rows="6"></textarea>
-                                                    
-                                                    
+
+
                                                         @if ($errors->has('message'))
                                                             <span class="invalid-feedback" role="alert">
                                                                 <strong>{{ $errors->first('message') }}</strong>
                                                             </span>
                                                         @endif
-                                                    
+
                                                     </div>
 
                                                     <div class="text-center submit">
@@ -195,12 +195,12 @@
             <hr class="clearfix w-100 d-md-none">
 
             <div class="col-md-2 mx-auto">
-            
+
             <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
 
             <ul class="list-unstyled">
                 <li>
-                <a href="{{$url}}">Home</a>
+                <a href="{{route('homeuser')}}">Home</a>
                 </li>
                 <li>
                 <a href="{{ route('contactget') }}">Contact</a>
@@ -285,7 +285,7 @@
     </footer>
         <!-- Footer -->
 
-                        <script src="{{ asset('argon') }}/vendor/jquery/dist/jquery.min.js"></script>  
+                        <script src="{{ asset('argon') }}/vendor/jquery/dist/jquery.min.js"></script>
         <script src="{{ asset('js') }}/script.js"></script>
         <script src="{{ asset('js') }}/jquery-3.5.1.min.js">
         //<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

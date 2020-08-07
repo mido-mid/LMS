@@ -10,7 +10,7 @@
 
                 @guest
                     <a href="{{ route('register') }}" class="btn btn-primary">
-                        Start Learning    
+                        Start Learning
                     </a>
                 @endguest
 
@@ -30,7 +30,7 @@
                     <a href="{{ route('allcourses') }}" class="btn courses">All Courses</a>
                 @endguest
             </div>
-        </div>  
+        </div>
     </div>
 
 

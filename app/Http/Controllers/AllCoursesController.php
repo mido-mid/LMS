@@ -12,10 +12,8 @@ class AllCoursesController extends Controller
     public function index()
     {
 
-        $url = '/laravel/LMS/public';
-
         $allcourses = Course::paginate(8);
 
-        return view('allcourses',compact('allcourses','url'));
+        return view('allcourses',compact('allcourses'));
     }
 }

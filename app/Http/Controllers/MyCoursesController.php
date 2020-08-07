@@ -15,19 +15,18 @@ class MyCoursesController extends Controller
         $this->middleware('auth');
     }
 
-    public function index(){
-
-		$url = '/laravel/LMS/public';
+    public function index()
+    {
 
             $user = auth()->user();
-            
+
             $user_courses_ids = $user->courses->pluck('id');
 
             $user_courses = $user->courses;
 
             $fav_courses = Course::where('favourite', 1)->whereIn('id',$user_courses_ids)->get();
-            
-            return view('mycourses', compact('user_courses','fav_courses','url'));
+
+            return view('mycourses', compact('user_courses','fav_courses'));
     }
 
 
@@ -35,8 +34,8 @@ class MyCoursesController extends Controller
     {
 
         $course->update(['favourite' => $request->favourite]);
-  
-       
+
+
         return redirect('/mycourses')->withStatus('well done ,'.$course->title.' Course have been added to your favourites');
     }
 }

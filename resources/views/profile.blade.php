@@ -25,7 +25,7 @@
 
                                 <a class="btn btn-primary" id="upload_btn" href=""><i class="fas fa-cloud-upload-alt"></i> upload</a>
 
-                                    <form id="form" action="{{$url}}/profile" method="POST" enctype="multipart/form-data">
+                                    <form id="form" action="{{route('profilepost')}}" method="POST" enctype="multipart/form-data">
 
                                         @csrf
                                         <input type="file" id="image_file" name="image">
@@ -42,8 +42,8 @@
 
                                     <li>{{$user->score}} Points</li>
 
-                                    <li><i  class="fas fa-user-shield"></i> 
-                                    
+                                    <li><i  class="fas fa-user-shield"></i>
+
                                         @if( $user->admin == 1)
                                             Admin
                                         @elseif($user->admin == 2)
@@ -51,7 +51,7 @@
                                         @else
                                             user
                                         @endif
-                                    
+
                                     </li>
 
                                     <li style="font-weight:bold;" class="{{$user->email_verified_at ? 'text-success' : 'text-danger' }}">{{$user->email_verified_at ? 'Verified' : 'Unverified'}}</li>
@@ -62,7 +62,7 @@
                             </div>
                         </div>
 
-                        
+
                     </div>
 
                     <div class="col-sm-1"></div>
@@ -71,18 +71,18 @@
 
 
                         <p id="error" role="alert" class="alert alert-danger" style="font-size:16px;font-family:'lato';padding: 8px 15px;display:none">
-                    
+
                             please enter your name , email and confirm your password
-                    
+
                             </p>
 
                             <div class="user-form">
-                                
-                                <form method="POST" id="user-form" action="{{$url}}/profile" autocomplete="off">
+
+                                <form method="POST" id="user-form" action="{{route('profilepost')}}" autocomplete="off">
 
                                     @csrf
                                     <h3 class="heading-small text-muted mb-4">{{ __('User information') }}</h3>
-                                
+
 
 
                                     <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
@@ -110,7 +110,7 @@
                                     <div class="form-group{{ $errors->has('password') ? ' has-danger' : '' }}">
                                         <label class="form-control-label" for="input-password">{{ __('New Password') }}</label>
                                         <input type="password" name="password" id="input-password" class="form-control form-control-alternative{{ $errors->has('password') ? ' is-invalid' : '' }}" placeholder="{{ __('New Password') }}" value="">
-                                        
+
                                         @if ($errors->has('password'))
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $errors->first('password') }}</strong>
@@ -144,9 +144,9 @@
                             <ul class="list-unstyled">
 
                                 @foreach($tracks as $track)
-                                    
-                                    <li><a class="btn track-name" href="{{ $url }}/tracks/{{$track->name}}">{{ $track->name }}</a></li>
-                                    
+
+                                    <li><a class="btn track-name" href="{{route('track',$track->name)}}">{{ $track->name }}</a></li>
+
                                 @endforeach
 
                             </ul>
@@ -157,8 +157,8 @@
 
                             <ul class="list-unstyled">
 
-                                    
-                            you are not enrolled in any track&nbsp; <a class="btn btn-primary" href="{{ $url }}/allcourses">see our courses</a>
+
+                            you are not enrolled in any track&nbsp; <a class="btn btn-primary" href="{{route('allcourses')}}">see our courses</a>
 
                             </ul>
 

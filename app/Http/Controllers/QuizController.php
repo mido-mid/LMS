@@ -21,12 +21,11 @@ class QuizController extends Controller
     public function index($slug,$name)
     {
 
-        $url = '/laravel/LMS/public';
         $course = Course::where('slug',$slug)->first();
 
         $quiz = $course->quizzes()->where('name', $name)->first();
 
-        return view('quiz',compact('quiz','url'));
+        return view('quiz',compact('quiz'));
     }
 
 
@@ -34,14 +33,12 @@ class QuizController extends Controller
     {
 
 
-        $url = '/laravel/LMS/public';
-
             $quiz = Quiz::where('name',$name)->first();
 
             $questions = $quiz->questions;
 
             $quiz_score = 0;
-            
+
             $question_ids = [];
 
 

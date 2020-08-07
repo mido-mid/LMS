@@ -8,7 +8,7 @@ $(function(){
 
     });
 
-    $('#showvideo').on('hide.bs.modal', function(e) {    
+    $('#showvideo').on('hide.bs.modal', function(e) {
         var $if = $(e.delegateTarget).find('iframe');
         var src = $if.attr("src");
         $if.attr("src", '/empty.html');
@@ -56,7 +56,7 @@ $(function(){
 
         $.ajax({
 
-            url: '/laravel/LMS/public/profile',
+            url: 'profile',
             type: 'POST',
             data: new FormData(this),
             dataType: 'JSON',
@@ -79,11 +79,11 @@ $(function(){
 
 
         e.preventDefault();
-        
+
 
         $.ajax({
 
-            url: '/laravel/LMS/public/profile',
+            url: 'profile',
             type: 'POST',
             data: new FormData(this),
             dataType: 'JSON',
@@ -114,7 +114,7 @@ $(function(){
 
         $.ajax({
 
-            url: '/laravel/LMS/public/contact',
+            url: 'contact',
             type: 'POST',
             data: new FormData(this),
             dataType: 'JSON',

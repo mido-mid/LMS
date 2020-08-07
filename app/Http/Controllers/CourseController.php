@@ -19,16 +19,14 @@ class CourseController extends Controller
     public function index($slug)
     {
 
-        $url = '/laravel/LMS/public';
         $course = Course::where('slug',$slug)->first();
 
-        return view('course',compact('course','url'));
+        return view('course',compact('course'));
     }
 
     public function enroll($slug)
     {
 
-        $url = '/laravel/LMS/public';
         $course = Course::where('slug',$slug)->first();
 
         $user = auth()->user();

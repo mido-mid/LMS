@@ -17,9 +17,7 @@ class ContactController extends Controller
     public function index()
     {
 
-        $url = '/laravel/LMS/public';
-
-        return view('contact',compact('url'));
+        return view('contact');
     }
 
 
